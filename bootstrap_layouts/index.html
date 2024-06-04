@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Bootstrap Layout Lecture"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+<title>SE147 Does Bootstrap</title>
+</head>
+<body>
+    <!-- BOOTSTRAP HAS 12 COLUMNS TOTAL -->
+    <!-- col & col-auto will automatically evenly distribute -->
+    <!-- BREAKPOINTS usuaally for mobile-first (aka small screen first) -->
+    <div class="container-fluid">
+        <!-- g adds gutters inn between the columns -->
+        <!-- p adds paadding inside your container -->
+        <!-- pading & margin  (s = start, e = end, t= top, b=bottom, x=x-axis, y=y-axis)-->
+        <div class="row g-1 py-4 my-5 justify-content-evenly">
+            <!-- Mobile First means give defaualt behavior to the smallest screen -->
+            <!-- Default behavior is col-12 (aka taake up all 12 columns) -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <p>Column 1</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-2">
+                <p>Column 2</p>
+            </div>
+            <!-- offset is for targetting specific divs -->
+            <!-- offset & margin are very similar -->
+            <!-- offset essentially moves it over columns based off the offset # -->
+            <!-- margin is just giving space to the side -->
+            <div class="col-12 col-sm-6 col-md-2 offset-3 ms-3">
+                <p>Column 3</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <!-- Access display properties utilizing "d" -->
+            <div class="col d-none d-sm-inline">
+                <p>Column 1</p>
+            </div>
+            <!-- col is how much space on that row thta specific column is taking up -->
+            <!-- d-flex and flex-column is targetting the CHILDREN of this div -->
+            <!-- as soon as we give something a position, its going to shrink it down to only its content dimension needs -->
+            <div class="
+                col-8
+                d-flex 
+                flex-column
+                justify-content-center
+                align-items-center
+                " style="height: 200px; width: 300px; border: 2px solid tomato">
+                <h1>I am a Header</h1>
+                <p class="p-2 text-center" style="width:200px;">Column 2</p>
+                <button>Press Me</button>
+            </div>  
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">Col 1</div>
+            <div class="col">Col 2</div>
+            <div class="col">Col 3</div>
+            <div class="col">Col 4</div>
+            <div class="col">Col 5</div>
+            <div class="col">Col 6</div>
+            <div class="col">Col 7</div>
+            <div class="col">Col 8</div>
+            <div class="col">Col 9</div>
+            <div class="col">Col 10</div>
+            <div class="col">Col 11</div>
+            <div class="col">Col 12</div>
+        </div>
+        
+        
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+

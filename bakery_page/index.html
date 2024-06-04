@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="./static/style.css">
+<title>Pipet's Bakery</title>
+</head>
+<body>
+    <!-- OUR BAKERS & DOWN -->
+    <main class="container my-4">
+        <!-- on it's own, doesn't have anything else in it's row -->
+        <h1 class="text-center mb-4">OUR BAKERS</h1>
+        <!-- if adding a class for targeting css styling put that class in the front of the back -->
+        <!-- when adding properties to specific breakpoints it follows the order (whatever property - breakpoint - spacing unit 1-5) -->
+        <div class="row g-3 justify-content-evenly bakery-cards">
+            <div class="
+                col 
+                d-flex 
+                flex-column 
+                justify-content-evenly 
+                align-items-center 
+                p-xl-3">
+                    <!-- img-fluid is the same as height: 100%, width: 100% (conntain the image to the parent container) -->
+                    <div class="images">
+                        <!-- width is 100% of parent container, height is auto -->
+                        <img class="img-fluid" src="./static/images/Cube Croissant 1.png" alt="bakery image">
+                    </div>
+                    <a href="#">Jo-Smo's Bakery</a> 
+            </div>
+            <div class="
+                col 
+                d-none 
+                d-lg-flex 
+                flex-column 
+                justify-content-evenly 
+                align-items-center 
+                p-xl-3">
+                    <div class="images">
+                        <img class="img-fluid" src="./static/images/Apple-pie-848x477 1.png" alt="bakery image">
+                    </div>
+                    <a href="#">Jo-Smo's Bakery</a> 
+            </div>
+            <div class="
+                col 
+                d-none 
+                d-lg-flex 
+                flex-column 
+                justify-content-evenly 
+                align-items-center 
+                p-xl-3">
+                    <div class="images">
+                        <img class="img-fluid" src="./static/images/baguetteinside 1.png" alt="bakery image">
+                    </div>
+                    <a href="#">Jo-Smo's Bakery</a> 
+            </div>
+        </div>
+        <!-- SECOND ROW OF IMAAGES (Copy/Paste from above) -->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        
+        <div class="row justify-content-center my-4 happy-customer">
+            <div class="col d-flex flex-column justify-content-between text-center my-5">
+                <h1>What's Everybody Talking About?</h1>
+                <h2>“I never knew I needed a one-stop shop
+                    for my bakery needs until now. This is the new love of my life!”</h2>
+                    
+                <h3>-Happy Customer</h3>
+            </div>
+        </div>
+        
+        
+        
+    </main>
+    <!-- Decided to do 2 seperate containers vs 1 container for styling purposes -->
+    <footer class="container-fluid pt-3">
+        <div class="row align-items-center ">
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <div id="logo">
+                    <img class="img-fluid" src="./static/images/logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-around">
+                <a href="#" >FAQs</a>
+                <a href="#">Contact</a>
+                <a href="#">Policies</a>
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end">
+                <div>
+                    <img src="./static/images/image 5.png" alt="instagram icon">
+                </div>
+                <div>
+                    <img src="./static/images/image 7.png" alt="facebook icon">
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

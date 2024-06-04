@@ -1,0 +1,37 @@
+
+
+.bakery-cards > div {
+    background-color: #F2CEA8;
+    border-radius: 10px;
+    max-width: 350px;
+    min-width: 150px;
+    min-height: 300px; 
+}
+
+.images {
+    /* height at an absolute unit/length */
+    height: 250px;
+    /* width: auto;  */
+    /* background-color: red;  */
+}
+
+/* wanting ALL images to be the same height */
+.images > img {
+    height: 100%;
+    width: 100%; 
+}
+
+.happy-customer {
+    min-height: 350px;
+}
+
+footer {
+    background-color: #8C5E7A;
+    min-height: 180px;
+    height: 100%; 
+}
+
+#logo {
+    /* img-fluid in html works with width */
+    width: 150px;
+}
